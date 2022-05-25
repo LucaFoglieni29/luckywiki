@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.App {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 250px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Poppins", cursive;
+  margin-bottom: 20px;
+}
+
+.App form {
+  display: inline-block;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.39);
+          box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.39);
+  margin-bottom: 30px;
+}
+
+.App input {
+  line-height: 50px;
+  border-radius: 12px 0 0 20px;
+  border: none;
+  width: 450px;
+  padding: 0 20px;
+  background-color: #ecd82d;
+  font-size: large;
+}
+
+.App input:focus {
+  outline: none;
+}
+
+.App button {
+  line-height: 50px;
+  border: none;
+  background-color: #f6f6f6;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.App button:hover {
+  border-radius: 0 20px 20px 0;
+  -webkit-animation-name: animbutton;
+          animation-name: animbutton;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  background-color: #24a6d9;
+  color: white;
+}
+
+.App button:not(:hover) {
+  -webkit-animation-name: noanimbutton;
+          animation-name: noanimbutton;
+  border-radius: 0 20px 12px 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes animbutton {
+  from {
+    border-radius: 0 20px 12px 0;
+  }
+  to {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+@keyframes animbutton {
+  from {
+    border-radius: 0 20px 12px 0;
+  }
+  to {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+@-webkit-keyframes noanimbutton {
+  from {
+    border-radius: 0 20px 20px 0;
+  }
+  to {
+    border-radius: 0 20px 12px 0;
+  }
+}
+
+@keyframes noanimbutton {
+  from {
+    border-radius: 0 20px 20px 0;
+  }
+  to {
+    border-radius: 0 20px 12px 0;
+  }
+}
+
+.App button:focus {
+  outline: none;
+}
+
+.searchResultDiv {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.searchResultDiv h3 {
+  color: #24a6d9;
+}
+
+.searchResultDiv h3 a {
+  color: #24a6d9;
+  display: inline-block;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.searchResultDiv h3 a:hover {
+  border-bottom: 3px solid;
+}
+
+.searchResultDiv a:visited {
+  color: #ecd82d;
+}
+
+.searchResultDiv .link a {
+  text-decoration: none;
+  color: #287e44;
+}
+
+.searchResultDiv .link a:hover {
+  text-decoration: none;
+}
+
+.searchResultDiv .searchmatch {
+  font-weight: bold;
+}
+
+.searchResultDiv .description {
+  color: #dfdfdf;
+}
+
+.logo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: none;
+}
+
+.paleo {
+  color: #24a6d9;
+}
+
+.logo .w {
+  color: #ae2324;
+}
+
+.logo .ik {
+  color: #ecd82d;
+}
+
+.logo .i {
+  color: #6ca141;
+}
+
+footer {
+  bottom: 0;
+  color: #fff;
+  position: fixed;
+  background-color: #24a6d9;
+  height: 1.5rem;
+  width: 100%;
+  left: 0;
+  pointer-events: none;
+  -webkit-perspective: 900;
+          perspective: 900;
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    overflow: hidden;
+    margin-top: 100px;
+  }
+  .App input {
+    line-height: 40px;
+    border-radius: 12px 0 0 20px;
+    border: none;
+    width: 280px;
+    padding: 0 10px;
+  }
+  .App button {
+    line-height: 40px;
+    border: none;
+    background-color: #f6f6f6;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: large;
+  }
+  .searchResultDiv {
+    width: auto;
+    margin: 0 20px auto;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .App {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  .App input {
+    line-height: 40px;
+    border-radius: 12px 0 0 20px;
+    border: none;
+    width: 220px;
+    padding: 0 10px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
